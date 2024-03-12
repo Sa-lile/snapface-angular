@@ -5,18 +5,19 @@
   <!-- <p>{{ 4346234.36 | number : "1.0-0" }}</p>             
   <p>{{ 344.36 | currency: 'EUR' }}</p> -->
   <h2>{{ faceSnap.title | titlecase }}</h2>
+  <button class="label" routerLink="/facesnaps">Back</button><br>
   <p>Mis en ligne à {{ faceSnap.createdDate | date : "longDate" }}</p>
-  <button (click)="onViewFaceSnap()">VIEW</button>
-  <!-- <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
+  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
   <p>{{ faceSnap.description }}</p>
-  <p *ngIf="faceSnap.location">Photo à prise {{ faceSnap.location }}</p> -->
+  <p *ngIf="faceSnap.location">Photo à prise {{ faceSnap.location }}</p>
   <!-- **** on peut écrire si location est Japon,c'est affiche *** -->
   <!-- <p *ngIf="faceSnap.location === 'Japon'">Photo à prise {{ faceSnap.location }}</p> -->
 
-  <!-- <p>
+  <p>
     <button (click)="onSnap()">{{ buttonText }}</button>
     <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"
       >📌 {{ faceSnap.snaps }}</span
     >
-  </p> -->
+  </p>
 </div>
+
